@@ -1,3 +1,4 @@
+// 1st Method
 function solution(arr) {
   if (arr.length == 0) {
     return null;
@@ -18,6 +19,21 @@ function solution(arr) {
   return arr;
 }
 
+// 2nd Method
+function answer(arr) {
+  if (arr.length == 0) {
+    return null;
+  }
+
+  if (arr.length == 1) {
+    return arr;
+  }
+
+  return arr.sort((a, b) => a - b);
+}
+
 var arr = [1, 5, 3, 6, 7, 2, 8, 9, 4, 0];
 
 console.log(solution(arr));
+console.log(answer(arr));
+
